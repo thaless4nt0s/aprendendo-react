@@ -4,12 +4,14 @@ import Welcome from './components/Welcome'
 import Hello from "./components/Hello"
 import Senna from './components/Senna'
 import Message from './components/Message'
+import Latifi from './components/Latifi'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Welcome name="Bruce " heroName="Batman" />
+      <Latifi></Latifi>
       {/*<Message/>*/} 
       {/*<Greet name="Bruce " heroName="Batman">
         <p>This is children props</p>  
