@@ -8,10 +8,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Greet></Greet>
-      <Welcome></Welcome>
-      <Hello></Hello>
-      <Senna></Senna>
+      <Greet name="Bruce " heroName="Batman">
+        <p>This is children props</p>  
+      </Greet>
+
+      <Greet name="Travis " heroName="Batman">
+        <button>Action</button>
+      </Greet>
+      <Greet name="Diana " heroName="Batman">
+        <input type="text"></input>
+      </Greet>
+      <Welcome name="Bruce " heroName="Batman" />
+      
+      {/*<Hello></Hello>*/}
+      {/*<Senna></Senna>*/}
     </div>
   );
 }
