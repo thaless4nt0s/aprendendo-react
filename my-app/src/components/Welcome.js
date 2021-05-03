@@ -1,33 +1,16 @@
 import React, { Component } from 'react'
 
 class Welcome extends Component {
-    constructor(){
-        super()
-        this.state = {
-            message: "A.K.A"
-        }
-    }
-
-    changeMessage(){
-        this.setState({
-            message:  "Obrigado por clicar"
-        })
-    }
-
-
+    
     render() {
+        const {name, heroName} = this.props
         return (
             <div>
-                <h1>
-                    Class {this.state.message}
-                </h1>
-                <button onClick={()=> this.changeMessage()}>
-                    a.k.a
-                </button>
+                <h1>Name:   {name}</h1>
+                <h1>HeroName: {heroName}</h1>
             </div>
         )
     }
-
-
 }
+
 export default Welcome

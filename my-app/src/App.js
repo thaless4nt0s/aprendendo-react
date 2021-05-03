@@ -13,14 +13,13 @@ import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      {/*<Counter/>*/}
       {/*<Welcome name="Bruce " heroName="Batman" />
       <Latifi></Latifi>*/}
       {/*<Message/>*/} 
       {/*<Greet name="Bruce " heroName="Batman">
         <p>This is children props</p>  
       </Greet>
-
       <Greet name="Travis " heroName="Batman">
         <button>Action</button>
       </Greet>
@@ -31,6 +30,8 @@ function App() {
 
       {/*<Hello></Hello>*/}
       {/*<Senna></Senna>*/}
+      <Greet name="Thales" heroName="Vettel" />
+      <Welcome name="Bruce " heroName="Batman" />
     </div>
   );
 }
