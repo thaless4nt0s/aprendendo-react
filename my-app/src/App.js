@@ -32,6 +32,7 @@ function App() {
       {/*<Senna></Senna>*/}
       <Greet name="Thales" heroName="Vettel" />
       <Welcome name="Bruce " heroName="Batman" />
+      <Latifi />
     </div>
   );
 }
