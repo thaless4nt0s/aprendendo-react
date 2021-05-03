@@ -1,3 +1,4 @@
+import './App.css';
 import logo from './logo.svg';
 import Greet from "./components/Greet"
 import Welcome from './components/Welcome'
@@ -7,13 +8,12 @@ import Message from './components/Message'
 import Latifi from './components/Latifi'
 import Fruits from './components/Fruits'
 import Ola from './components/Ola'
-
-import './App.css';
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <Ola/>
+      <Counter/>
       {/*<Welcome name="Bruce " heroName="Batman" />
       <Latifi></Latifi>*/}
       {/*<Message/>*/} 
