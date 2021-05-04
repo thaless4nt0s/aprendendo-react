@@ -1,45 +1,40 @@
 import React, { Component } from 'react'
 
-class Latifi extends Component{
-    constructor(){
-        super()
+class Latifi extends Component {
+    
+    constructor(props) {
+        super(props)
+    
         this.state = {
-            mensagem: "George",
-            counter: 0
+            msg: "George",
+            count: 0
         }
     }
-
-    changeMessage(){
-        //Se for par
-        if(!(this.state.counter % 2)){
-            this.setState({
-                mensagem: "Russel"
     
-            },
-            () => this.increment()
-            )
+    changeName(){
+        if(!(this.state.count % 2)){
+            this.setState({
+                msg: "Russel"
+            })
         }else{
             this.setState({
-                mensagem: "George"
-    
-            },
-            () => this.increment()
-            )
+                msg: "George"
+            })
         }
+        this.increment()
     }
 
     increment(){
-        this.setState((previousValue) => ({
-            counter: previousValue.counter + 1
-        }), console.log("VALOR: ",this.state.counter))
+        this.setState((prevResult) => ({
+            count: prevResult.count + 1
+        }))
     }
 
-    render(){
-
-        return(
+    render() {
+        return (
             <div>
-                <h1>{this.state.mensagem}</h1>
-                <button onClick={() => this.changeMessage()}>Russel</button>
+                <h1>{this.state.msg}</h1>
+                <button onClick={() => this.changeName()}>ChangeName</button>
             </div>
         )
     }

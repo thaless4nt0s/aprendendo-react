@@ -31,7 +31,7 @@ function App() {
       {/*<Hello></Hello>*/}
       {/*<Senna></Senna>*/}
       <Greet name="Thales" heroName="Vettel" />
-      <Welcome name="Bruce " heroName="Batman" />
+      <Welcome name="Bart " heroName="Krusty" />
       <Latifi />
     </div>
   );
