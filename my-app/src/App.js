@@ -9,6 +9,9 @@ import Latifi from './components/Latifi'
 import Fruits from './components/Fruits'
 import Ola from './components/Ola'
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+
 
 function App() {
   return (
@@ -30,9 +33,8 @@ function App() {
 
       {/*<Hello></Hello>*/}
       {/*<Senna></Senna>*/}
-      <Greet name="Thales" heroName="Vettel" />
-      <Welcome name="Bart " heroName="Krusty" />
-      <Latifi />
+      <FunctionClick/>
+      <ClassClick/>
     </div>
   );
 }
