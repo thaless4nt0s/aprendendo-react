@@ -11,6 +11,7 @@ import Ola from './components/Ola'
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 
 function App() {
@@ -33,8 +34,7 @@ function App() {
 
       {/*<Hello></Hello>*/}
       {/*<Senna></Senna>*/}
-      <FunctionClick/>
-      <ClassClick/>
+      <EventBind/>
     </div>
   );
 }
