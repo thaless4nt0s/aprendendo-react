@@ -13,7 +13,8 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
+import UserGreeting from './components/UserGreeting'; 
+import NameList from './components/NameList';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       <Welcome name="Bruce " heroName="Batman" />*/}
       {/*<Hello></Hello>*/}
       {/*<Senna></Senna>*/}
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
+      <NameList />
     </div>
   );
 }
