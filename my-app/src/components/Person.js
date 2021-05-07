@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Person({person}) {
+function Person({student}) {
     return (
         <div>
-            <h2>I am {person.name}. I am {person.age} years old. I know {person.skill}</h2>
+            <h2>
+                Disciplina: {student.disciplina}<br/>
+                Carga Horaria: {student.ch}<br/>
+                Professor: {student.professor}<br/>
+            </h2>
+            <hr/>
         </div>
     )
 }

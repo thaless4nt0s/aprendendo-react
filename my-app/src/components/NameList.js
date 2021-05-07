@@ -2,31 +2,54 @@ import React from 'react'
 import Person from './Person'
 
 function NameList() {
-    const persons = [
+    const semestre = [
+        {
+            id: 0,
+            disciplina: "Física II",
+            ch: 80,
+            professor: "Antonio Carlos"
+        },
         {
             id: 1,
-            name: "Bruce",
-            age: 30,
-            skill: 'React'
+            disciplina: "Programação Linear",
+            ch: 80,
+            professor: "Adriano Tavares"
         },
         {
             id: 2,
-            name: "Clark",
-            age: 25,
-            skill: 'Angular'
+            disciplina: "Probabilidade e Estatística",
+            ch: 80,
+            professor: "Marcos Cirineu"
         },
         {
-            id: 3,
-            name: "Diana",
-            age: 28,
-            skill: 'Vue'
-        }
+            id: 0,
+            disciplina: "Calculo Numerico",
+            ch: 80,
+            professor: "Genilson Gomes"
+        },
+        {
+            id: 0,
+            disciplina: "Lógica para Computação",
+            ch: 80,
+            professor: "Thiago Alves"
+        },
+        {
+            id: 0,
+            disciplina: "POO",
+            ch: 80,
+            professor: "Igor Rafael"
+        },
     ]
-    const personList = persons.map(person =>
-        <Person person={person}/>
+    const aluno = semestre.map(student =>
+        <Person student={student} />
     )
     return (
-        <div>{personList}</div>
+        <div>
+            <p>Meu semestre</p>
+            <div>
+                {aluno}
+            </div>
+        </div>
     )
 }
 
