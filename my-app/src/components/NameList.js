@@ -18,9 +18,9 @@ function NameList() {
             livro: "Assassins Creed"
         }
     ]
-
+    
     const listaLivros = livros.map(livro => (
-        <Person livros={livro}/>
+        <Person key={livro.autor} livros={livro}/>
     ))
 
     return (
