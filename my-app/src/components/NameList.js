@@ -1,31 +1,36 @@
 import React from 'react'
 import Person from './Person'
 function NameList() {
-    const livros = [
+    const names = ['Bruce','Clark','Diana','Bruce']
+
+    const persons = [
         {
             id: 0,
-            autor: "Cecilia Meirelles",
-            livro: "A volta dos que nao foram"
+            name: "Bruce",
+            age: 30,
+            skill: "React"
         },
         {
             id: 1,
-            autor: "Joseph Murphy",
-            livro: "O poder do subconsciente"
+            name: "Clark",
+            age: 26,
+            skill: "Angular"
         },
         {
             id: 2,
-            autor: "Autor aleatorio",
-            livro: "Assassins Creed"
+            name: "Diana",
+            age: 28,
+            skill: "Vue"
         }
     ]
     
-    const listaLivros = livros.map(livro => (
-        <Person key={livro.autor} livros={livro}/>
-    ))
+    const nameList = names.map((name,index) =>
+            <h2 key={index}>{name}</h2>
+        )
 
     return (
         <div>
-            {listaLivros}
+            {nameList}
         </div>
     )
 }
