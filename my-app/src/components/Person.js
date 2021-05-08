@@ -1,13 +1,10 @@
 import React from 'react'
 
-function Person({student}) {
+function Person({livros}) {
     return (
         <div>
-            <h2>
-                Disciplina: {student.disciplina}<br/>
-                Carga Horaria: {student.ch}<br/>
-                Professor: {student.professor}<br/>
-            </h2>
+            <p>Livro: {livros.livro}</p>
+            <p>Autor: {livros.autor}</p>
             <hr/>
         </div>
     )
