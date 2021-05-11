@@ -1,12 +1,12 @@
 import './App.css';
-import LifecycleA from './components/LifecycleA';
+import Tables from './components/Tables';
 
 
 function App() {
 
   return (
     <div className="App">
-      <LifecycleA />
+      <Tables/>
     </div>
   );
 }
