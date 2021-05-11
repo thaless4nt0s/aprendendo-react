@@ -8,7 +8,7 @@ class Form2 extends Component {
             name: "",
             age: '',
             characteristics: "",
-            skills: ""
+            skills: "react"
 
         }
     }
