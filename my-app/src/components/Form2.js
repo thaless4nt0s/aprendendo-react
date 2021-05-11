@@ -76,7 +76,6 @@ Characteristics: ${this.state.characteristics}\nSkills: ${this.state.skills}`)
                         <option value='php'>php</option>
                     </select>
                 </div>
-                <input type='color' />
                 <input type="submit" />
             </form>
         )
