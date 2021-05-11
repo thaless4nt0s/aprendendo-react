@@ -1,10 +1,12 @@
 import './App.css';
-import Form2 from './components/Form2';
+import LifecycleA from './components/LifecycleA';
+
 
 function App() {
+
   return (
     <div className="App">
-      <Form2/>
+      <LifecycleA />
     </div>
   );
 }
