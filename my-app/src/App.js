@@ -1,12 +1,16 @@
+import React from 'react';
 import './App.css';
-import Tables from './components/Tables';
+import ParentComp from './components/ParentComp';
+import PureComp from './components/PureComp';
+
+
 
 
 function App() {
 
   return (
     <div className="App">
-      <Tables/>
+      <ParentComp/>
     </div>
   );
 }
