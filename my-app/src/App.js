@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import FRParent from './components/FRParent';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
     <div className="App">
-      <FRParent/>
+      <PortalDemo/>
     </div>
   );
 }
