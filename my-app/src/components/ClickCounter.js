@@ -3,10 +3,11 @@ import WithCounter from './WithCounter'
 class ClickCounter extends Component {
 
     render() {
-        const {count, incrementCount} = this.props
+        const {count, incrementCount, name} = this.props
         return (
             <div>
                 <button onClick={incrementCount}>
+                    {name}
                     Click {count} times
                 </button>
             </div>
@@ -14,4 +15,4 @@ class ClickCounter extends Component {
     }
 }
 
-export default WithCounter(ClickCounter)
+export default WithCounter(ClickCounter,4)
