@@ -9,17 +9,16 @@ class Counter extends Component {
         }
     }
     
-    increment(){
-        this.setState((prevState) => ({
-            count: prevState.count + 1
-        }), console.log("CallBack function: ",this.state.count))
+    incrementCount = ()=>{
+        this.setState(prevState =>{
+            return{count: prevState.count + 1 }
+        })
     }
 
     render() {
         return (
             <div>
-                <h1>Count: {this.state.count}</h1>
-                <button onClick={() => this.increment()}>increment</button>
+                {this.props.children(this.state.count, this.incrementCount)}
             </div>
         )
     }
